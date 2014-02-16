@@ -20,6 +20,7 @@ namespace TrainGame
         private void Track1_CaughtOnFire(object sender, CaughtOnFireEventArgs e)
         {
             fire.Location = new System.Drawing.Point(Track1.Left + e.Location, Track1.Top - fire.Height);
+            Console.WriteLine("test");
         }
     }
 }
