@@ -18,58 +18,58 @@ namespace TrainGame
             InitializeComponent();
         }
 
-        private int m_speed = 0;
+        private int speed = 0;
         public int Speed
         {
-            get { return m_speed; }
-            set 
+            get { return speed; }
+            set
             {
-                if (value >=0 )
+                if (value >= 0)
                 {
-                    m_speed = value;
+                    speed = value;
                 }
             }
         }
 
-        private int m_distance = 0;
+        private int distance = 0;
         public int Distance
         {
-            get { return m_distance; }
+            get { return distance; }
         }
 
         public void ReStart()
         {
-            m_distance = 0;
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (m_speed > 0)
-            {
-                m_distance += (int)((double)m_speed * ((double)timer1.Interval / 1000F));
-                if (DistanceChanged != null)
-                {
-                    DistanceChanged(sender, new DistanceChangedEventArgs(m_distance));
-                }
-            }
+            distance = 0;
         }
 
         public delegate void DistanceChangedEventHandler(object sender, DistanceChangedEventArgs e);
 
-        public DistanceChangedEventHandler DistanceChanged;
+        public event DistanceChangedEventHandler DistanceChanged;
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (speed > 0)
+            {
+                distance += (int)((double)speed * ((double)timer1.Interval / 1000F));
+                if (DistanceChanged != null)
+                {
+                    DistanceChanged(this, new DistanceChangedEventArgs(distance));
+                }
+            }
+        }
     }
 
     public class DistanceChangedEventArgs : System.EventArgs
     {
-        private int m_distance;
+        private int distance;
         public int Distance
         {
-            get { return m_distance; }
+            get { return distance; }
         }
 
         public DistanceChangedEventArgs(int distance)
         {
-            m_distance = distance;
+            this.distance = distance;
         }
     }
 }
