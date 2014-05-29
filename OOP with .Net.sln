@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadBooks", "ReadBooks\ReadBooks.csproj", "{0D1A7BA7-C820-4E6C-AC2B-BE2E9DAFD9C9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadMoreBooks", "ReadMoreBooks\ReadMoreBooks.csproj", "{BA0B12F1-E6C0-4F50-A631-8AAD3564247A}"
@@ -20,6 +22,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABetterLibrary", "ABetterLibrary\ABetterLibrary.csproj", "{5FA12CC9-577E-46EE-9B94-D6578E06BF84}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainGame", "TrainGame\TrainGame.csproj", "{17C0E3B7-4625-4508-90A5-1AB56BCA687C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThrowSystemException", "ThrowSystemException\ThrowSystemException.csproj", "{5F2D2E8B-0726-4412-886E-DF4777580D29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonList", "PersonList\PersonList.csproj", "{72EA2752-9688-4BA5-AB24-E34DD0F354EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamesLibrary", "GamesLibrary\GamesLibrary.csproj", "{3BB44D63-F814-4346-AF0C-637B0D4B799A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +75,18 @@ Global
 		{17C0E3B7-4625-4508-90A5-1AB56BCA687C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17C0E3B7-4625-4508-90A5-1AB56BCA687C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17C0E3B7-4625-4508-90A5-1AB56BCA687C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F2D2E8B-0726-4412-886E-DF4777580D29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F2D2E8B-0726-4412-886E-DF4777580D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F2D2E8B-0726-4412-886E-DF4777580D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F2D2E8B-0726-4412-886E-DF4777580D29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72EA2752-9688-4BA5-AB24-E34DD0F354EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72EA2752-9688-4BA5-AB24-E34DD0F354EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72EA2752-9688-4BA5-AB24-E34DD0F354EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72EA2752-9688-4BA5-AB24-E34DD0F354EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BB44D63-F814-4346-AF0C-637B0D4B799A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB44D63-F814-4346-AF0C-637B0D4B799A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB44D63-F814-4346-AF0C-637B0D4B799A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB44D63-F814-4346-AF0C-637B0D4B799A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
